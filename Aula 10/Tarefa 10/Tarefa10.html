@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width-device-width, initial-scale=1">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+  integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+  integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"crossorigin="anonymous"></script>
+
+  <script src="js.js"></script>
+
+  <style type="text/css">
+
+    button { 
+
+      margin: 0 auto;
+    }
+
+    body {
+      text-align: center;
+    }
+   
+
+    h1 {
+      background-color: greenyellow; color: whitesmoke;
+    }
+
+    table {
+
+
+    background-color: white;
+    width: 100%;
+    nth-child  
+    }
+
+    tr:nth-child(even) {
+  background:#D5EADC;
+}
+
+
+
+  </style>
+
+  <title>Biblioteca da Moni</title>
+
+</head>
+
+<body>
+
+  <h1> Biblioteca da Moni </h1>
+
+  <div>  
+
+    <img id="img" src="img/ler.png">
+
+  </div>
+</div> 
+
+
+<div class="container">
+
+</div>
+
+<!-- cadastro de livros -->
+<div class="container mb-5">
+  <h2 class="text-center">Cadastrar novo livro</h2>
+
+
+
+
+
+  <form name="cadastrar" onsubmit="event.preventDefault()">
+
+
+
+
+
+
+
+
+    <!-- coluna título -->
+    <div class="row">
+      <div class="mb-3 col">
+        <label for="titulo" class="form-label">Título</label>
+        <input type="text" class="form-control" id="titulo" name="titulo" value= "" required >
+      </div>
+
+
+      <!-- coluna lançamento -->
+
+      <div class="mb-3 col">
+        <label for="lancamento" class="form-label">Lançamento</label>
+        <input type="date" class="form-control" id="lancamento" name="data" value= "" required>
+      </div>
+
+
+
+
+      <!-- coluna autor -->
+      <div class="mb-3 col">
+        <label for="autor (a)" class="form-label">Autor(a) </label>
+        <input type="text" class="form-control" id="autor" name="autor"  value= "" required>
+      </div>
+
+
+
+
+      <!-- Gênero -->
+      <div class="mb-3 col">
+        <label for="genero" class="form-label">Gênero</label>
+        <input type="text" class="form-control" id="genero" name="genero"  value= "" required>
+      </div>
+
+
+      <div class="row">
+        <div class="mb-3 col">
+          <input type="radio" name="avalia" class="form-check-input" value="Gostei" required>
+          <label for="Gostei" class="form-label">Gostei</label><br>
+        </div>
+
+        <div class="mb-3 col">
+          <input type="radio" name="avalia" class="form-check-input" value="Razoável">
+          <label for="Gostei" class="form-label">Razoável</label><br>
+        </div>
+
+        <div class="mb-3 col">
+          <input type="radio" name="avalia" class="form-check-input" value="Não Gostei">
+          <label for="Não gostei" class="form-label">Não gostei</label><br>
+        </div>
+
+      </div>
+
+
+      <!-- botão enviar -->
+      <div class="tex-center">
+        <button type="submit" id=btn class="btn btn-success mb-3 " onclick="insere()">Cadastrar livro</button>
+        <hr>
+
+
+      </div>
+
+    </form>
+
+    <!-- Livro cadastrado --> 
+
+    <table class="padding3"> 
+      <thead>
+        <tr class="text-ac">
+
+          <th scope="col">Título</th>
+          <th scope="col">Lançamento</th>
+          <th scope="col">Autor (a)</th>
+          <th scope="col">Gênero</th>
+          <th scope="col">Avaliação</th>
+
+        </tr>
+      </thead>
+      <tbody id="inserirTabela">
+
+        <tr>
+
+          <td>Esmeralda</td>
+          <td>2013</td>
+          <td>Zibia Gaspareto</td>
+          <td>Romance Espirita</td>
+          <td>Gostei</td>
+
+        </tr>
+
+        <tr>
+
+          <td>Quatro Vidas De Um Cachorro</td>
+          <td>W. Bruce Cameron</td>
+          <td>2016</td>
+          <td>Fantasia</td>
+          <td>Gostei</td>
+
+        </tr>
+
+        <tr>
+          <td>A garota no trem</td>
+          <td>Paula Hawkins</td>
+          <td>2015</td>
+          <td>Romance</td>
+          <td>Razoável</td>
+
+        </tr>
+
+        <tr>
+
+          <td>A atriz</td>
+          <td>Mônica de Castro</td>
+          <td>2012</td>
+          <td>Romance Espirita</td>
+          <td>Não Gostei</td>
+
+        </tr>
+
+        <tr>
+
+          <td>A garota no gelo</td>
+          <td>Robert Bryndza</td>
+          <td>2016</td>
+          <td>Suspense</td>
+          <td>Gostei</td>
+
+        </tr>
+
+        <!-- filme adicionado-->
+      </tbody>
+    </table>
+
+  </div>
+</head>
+</body>
+
+</html>

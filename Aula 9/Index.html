@@ -1,0 +1,55 @@
+<!doctype html>	
+
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Desenvolvendo Java Script I</title>
+</head>
+<body>
+
+
+	 <p id="teste"> </p>
+
+	 <script type="text/javascript">
+	  let x = "5" + 2 + 3;
+      document.getElementById('teste').innerHTML = x;	
+     </script>
+      
+
+     <h2> Relembrar Window Alert </h2>
+     <button onclick="clicou()">Clica Aí</button> 
+     <script type="text/javascript">
+     	function clicou(){
+     		window.alert("Você Clicou");
+     	}
+     </script>
+
+
+ <h2> Window Alert com prompt</h2>
+     <button onclick="digiteNome()">Clica Aí</button> 
+     <script type="text/javascript">
+     	function digiteNome(){
+     		let nome= window.prompt("Digite seu nome:");
+
+     	window.alert(`Olá ${nome}, você clicou!`);
+     	}
+     </script>
+
+
+  <h2> Calculando números</h2>
+     <button onclick="calcular()">Clica Aí</button> 
+     <script type="text/javascript">
+     	function calcular(){
+     		let num1= Number(window.prompt("Digite número 1:");
+     		let num2 =Number(window.prompt("Digite número 2:");
+     		
+
+     		window.alert(`A soma é ${soma}`);
+
+     
+     	}
+     </script>   
+
+</body>
+</html>

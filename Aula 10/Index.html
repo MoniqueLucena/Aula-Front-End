@@ -1,0 +1,401 @@
+ <!DOCTYPE html>
+  <html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="stilocss.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+    integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+    integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"crossorigin="anonymous"></script>
+
+    <script src="JavaScript.js"></script>
+
+    <title>Locadora 2000</title>
+
+  </head>
+
+  <body class="bg-white">
+
+    <nav class="navbar navbar-expand-lg bg-white">
+
+      <div class="container-fluid">  
+
+        <img id="img" src="img/rolofilme.png">
+        <a id="topo" class="navbar-brand" href="#topo">Locadora 2000</a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+           <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#tabFilmes">Filmes Disponíveis</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#drop" id="dropGeneros" role="button" data-bs-toggle="dropdown"aria-expanded="false">Filmes por Categoria</a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" href="#gAcao">Ação</a></li>
+              <li><a class="dropdown-item" href="#gAnim">Animação</a></li>
+              <li><a class="dropdown-item" href="#gRoman">Romance</a></li>
+              <li><a class="dropdown-item" href="#gSus">Suspense</a></li>
+              <li><a class="dropdown-item" href="#gDrama">Drama</a></li>
+              <li><a class="dropdown-item" href="#gComed">Comédia</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#cadFilmes">Cadastrar Filme</a>
+          </li>
+        </ul>
+      </div>
+    </div> 
+  </nav>
+
+
+  <div class="container">
+
+  </div>
+
+  <table class="padding3">
+    <thead>
+      <tr class="text-ac">
+        <th scope="col">Código</th>
+        <th scope="col">Título</th>
+        <th scope="col">Diretor</th>
+        <th scope="col">Lançamento</th>
+        <th scope="col">Gênero</th>
+        <th scope="col">Ator/Atriz principal</th>
+        <th scope="col">IMDb</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th class="text-center table-primary bg-green" colspan="7" id="#gAcao">Ação</th>
+      </tr>
+      <tr>
+        <th scope="row">1</th>
+        <td>Princípe da Pérsia: As Areias do Tempo</td>
+        <td>Mike Newell</td>
+        <td>3 de junho de 2010</td>
+        <td>Ação</td>
+        <td>Jake Gyllenhaal</td>
+        <td>6,6/10</td>
+      </tr>
+
+      <tr>
+        <th #id="filme" scope="row">2</th>
+        <td>Matrix</td>
+        <td>Lana Wachowski, Lilly Wachowski</td>
+        <td>21 de maio de 1999</td>
+        <td>Ação</td>
+        <td>Keanu Reeves</td>
+        <td>8,7/10</td>
+      </tr>
+
+      <tr>
+        <th scope="row">3</th>
+        <td>Top Gun: Maverick</td>
+        <td>Joseph Kosinski</td>
+        <td>26 de maio de 2022</td>
+        <td>Ação</td>
+        <td>Tom Cruise</td>
+        <td>8,4/10</td>
+      </tr>
+      <tr>
+        <th class="text-center table-primary bg-green" colspan="7" id="#gAnim">Animação</th>
+      </tr>
+      <tr>
+        <th scope="row">4</th>
+        <td>Viva: A Vida é uma Festa</td>
+        <td>Lee Unkrich</td>
+        <td>4 de janeiro de 2018</td>
+        <td>Animação</td>
+        <td>Anthony Gonzalez (voz)</td>
+        <td>8,4/10</td>
+      </tr>
+
+      <tr>
+        <th #id="filme" scope="row">5</th>
+        <td>O Rei Leão</td>
+        <td>Rob Minkoff, Roger Allers</td>
+        <td> 8 de julho de 1994</td>
+        <td>Animação</td>
+        <td>James Earl Jones (voz) </td>
+        <td>8,5/10</td>
+      </tr>
+
+
+      <tr>
+        <th scope="row">6</th>
+        <td>Soul</td>
+        <td>Peter Docter</td>
+        <td>25 de dezembro de 1980</td>
+        <td>Animação</td>
+        <td>Jamie Foxx (voz)</td>
+        <td>8,0/10</td>
+      </tr>
+      <tr>
+        <th class="text-center table-primary bg-green" colspan="7" id="#gSus">Suspense</th>
+      </tr>
+      <tr>
+        <th scope="row">7</th>
+        <td>Obsessão</td>
+        <td>Neil Jordan</td>
+        <td>13 de junho de 2019</td>
+        <td>Suspense</td>
+        <td>Isabelle Huppert</td>
+        <td>6,0/10</td>
+      </tr>
+
+      <tr>
+        <th #id="filme" scope="row">8</th>
+        <td>Corra!</td>
+        <td>Jordan Peele</td>
+        <td>18 de maio de 2017</td>
+        <td>Suspense</td>
+        <td>Daniel Kaluuya</td>
+        <td>8,6/10</td>
+      </tr>
+
+      <tr>
+        <th scope="row">9</th>
+        <td>Garota Exemplar</td>
+        <td>David Fincher</td>
+        <td>02 de outubro de 2014</td>
+        <td>Suspense</td>
+        <td>Rosamund Pike</td>
+        <td>8,1/10</td>
+      </tr>
+      <tr>
+        <th class="text-center table-primary bg-green" colspan="7" id="#gDrama">Drama</th>
+      </tr>
+      <tr>
+        <th scope="row">10</th>
+        <td>Spencer</td>
+        <td>Pablo Larraín</td>
+        <td>27 de janeiro de 2022</td>
+        <td>Drama</td>
+        <td>Kristen Stewart</td>
+        <td>6,6/10</td>
+      </tr>
+
+      <tr>
+        <th #id="filme" scope="row">11</th>
+        <td>A Cinco Passos de Você</td>
+        <td>Justin Baldoni</td>
+        <td>21 de março de 2021</td>
+        <td>Drama</td>
+        <td>Haley Lu Richardson</td>
+        <td>7,2/10</td>
+      </tr>
+
+      <tr>
+        <th scope="row">12</th>
+        <td>A Lista de Schindler</td>
+        <td>Steven Spielberg</td>
+        <td>31 de dezembro de 1993</td>
+        <td>Drama</td>
+        <td>Liam Neeson</td>
+        <td>9,0/10</td>
+      </tr>
+      <tr>
+        <th class="text-center table-primary bg-green" colspan="7" id="#gRoman">Romance</th>
+      </tr>
+      <tr>
+        <th scope="row">13</th>
+        <td>Continência ao Amor</td>
+        <td>Elizabeth Allen Rosenbaum</td>
+        <td>29 de julho de 2022</td>
+        <td>Romance</td>
+        <td>Sofia Carson</td>
+        <td>6,7/10</td>
+      </tr>
+
+      <tr>
+        <th #id="filme" scope="row">14</th>
+        <td>Nasce Uma Estrela</td>
+        <td>Bradley Cooper</td>
+        <td>11 de outubro de 2018</td>
+        <td>Romance</td>
+        <td>Lady Gaga</td>
+        <td>7,6/10</td>
+      </tr>
+
+      <tr>
+        <th scope="row">15</th>
+        <td>Dirty Dancing: ritmo quente</td>
+        <td>Emile Ardolino</td>
+        <td>25 de setembro de 1987</td>
+        <td>Romance</td>
+        <td>Jennifer Grey, Patrick Swayze</td>
+        <td>7,0/10</td>
+      </tr>
+
+
+      <tr>
+        <th class="text-center table-primary bg-green" colspan="7" id="#gComed">Comédia</th>
+      </tr>
+      <tr>
+        <th scope="row">16</th>
+        <td>Projeto X: Uma Festa Fora de Controle</td>
+        <td>Nima Nourizadeh</td>
+        <td>16 de março de 2012</td>
+        <td>Comédia</td>
+        <td>Thomas Mann</td>
+        <td>6,6/10</td>
+      </tr>
+
+      <tr>
+        <th scope="row">17</th>
+        <td #id="filme">Jumanji: Bem-Vindo à Selva</td>
+        <td>Jake Kasdan</td>
+        <td>4 de janeiro de 2018</td>
+        <td>Comédia</td>
+        <td>Dwayne Johnson</td>
+        <td>6,7/10</td>
+      </tr>
+
+      <tr>
+        <th scope="row">18</th>
+        <td>Os Caça-Fantasmas</td>
+        <td>Ivan Reitman</td>
+        <td>20 de dezembro de 1984</td>
+        <td>Comédia</td>
+        <td>Bill Murray</td>
+        <td>7,8/10</td>
+      </tr>
+
+<!-- filme adicionado-->
+<tr id="inserir">
+
+
+</tr>
+
+
+    </tbody>
+  </table>
+
+  <div class="m-5">
+    <hr class="border-success border-3 opacity-75 bg-green">
+  </div>
+
+  <!-- cadastro de filmes -->
+  <div class="container mb-5">
+    <h2 class="text-center">Cadastrar novo filme</h2>
+    
+
+    <form name="cadastrar" onsubmit="event.preventDefault()">
+
+      <!-- linha código e data -->
+      <div class="row">
+
+      </div>
+
+      <!-- linha titulo e diretor -->
+      <div class="row">
+      </div>
+
+      <!-- linha gêneros -->
+      <div class="row">
+      </div>
+
+      <!-- linha código e data -->
+      <div class="row">
+
+
+        <!-- coluna código -->
+        <div class="mb-3 col">
+          <label for="codFilme" class="form-label">Código</label>
+          <input type="text" class="form-control" id="codFilme" class="form-control" placeholder="00" name="codigo">
+        </div>
+
+        <!-- coluna data -->
+        <div class="mb-3 col">
+          <label for="AnoFilme" class="form-label">Lançamento</label>
+          <input type="date" class="form-control" id="AnoFilme" placeholder="DD de MM de AAAA" name="data">
+        </div>
+      </div>
+
+      <!-- linha título e diretor -->
+      <div class="row">
+
+        <!-- coluna título -->
+        <div class="mb-3 col">
+          <label for="tituloFilme" class="form-label">Título</label>
+          <input type="text" class="form-control" id="tituloFilme" name="titulo">
+        </div>
+
+        <!-- coluna diretor -->
+        <div class="mb-3 col">
+          <label for="diretorFilme" class="form-label">Diretor</label>
+          <input type="text" class="form-control" id="DiretorFilme" name="diretor">
+        </div>
+
+        <!-- coluna Ator/Atriz principal -->
+        <div class="mb-3 col">
+          <label for="diretorFilme" class="form-label">Ator/Atriz principal</label>
+          <input type="text" class="form-control" id="atorFilme" name="ator">
+        </div>
+
+        <!-- coluna Nota IMDb -->
+        <div class="mb-3 col">
+          <label for="diretorFilme" class="form-label">Nota IMDb</label>
+          <input type="number" min="0" max="10" class="form-control" id="NotaFilme" placeholder="0,0/10" name="nota">
+        </div>
+      </div>
+      
+      <!-- linha gêneros -->
+      <div class="row">
+
+        <div class="mb-3 col form-check">
+          <input type="radio" id="radiogeneroAcao" name="radio" class="form-check-input" value="acao">
+          <label for="radiogeneroAcao" class="form-label">Ação</label><br>
+        </div>
+
+        <div class="mb-3 col form-check">
+          <input type="radio" id="radiogeneroAnimacao" name="radio" class="form-check-input" value="animacao">
+          <label for="radiogeneroanimacao" class="form-label">Animação</label><br>
+        </div>
+
+        <div class="mb-3 col form-check">
+          <input type="radio" id="radiogeneroRomance" name="radio" class="form-check-input" value="Romance">
+          <label for="radiogeneroRomance" class="form-label">Romance</label><br>
+        </div>
+
+        <div class="mb-3 col form-check">
+          <input type="radio" id="radiogeneroSuspense" name="radio" class="form-check-input" value="Suspense">
+          <label for="radiogeneroSuspense" class="form-label">Suspense</label><br>
+        </div>
+
+        <div class="mb-3 col form-check">
+          <input type="radio" id="radiogeneroDrama" name="radio" class="form-check-input" value="Drama">
+          <label for="radiogeneroDrama" class="form-label">Drama</label><br>
+        </div>
+
+        <div class="mb-3 col form-check">
+          <input type="radio" id="radiogeneroDrama" name="radio" class="form-check-input" value="Comed">
+          <label for="radiogeneroComedia" class="form-label">Comédia</label><br>
+        </div>
+
+
+        <!-- botão enviar -->
+        <div class="tex-center">
+          <button type="submit" class="btn btn-success mb-3 " onclick="validaForm()">Cadastrar</button>
+        </div>
+      </div>
+
+      
+
+    </form>
+  </div>
+
+
+
+
+</head>
+</body>
+
+</html>

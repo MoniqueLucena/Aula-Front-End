@@ -1,0 +1,95 @@
+<!doctype html>	
+
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Tarefa 9</title>
+
+
+	<h1> Cálculo de Equações </h1>
+</head>
+
+	<hr>
+<body>
+
+
+	 <h2> Equação: 6 + 20 - 12 x 2 = </h2>
+	 <button onclick="calc1()">Calcular equação</button>
+	 <section id="equacao1">
+	 <h2> Resultado: </h2>
+	 </section>
+     <script type="text/javascript">
+	  function calc1(){
+	  	let equacao = 6 + 20 - 12 * 2;
+	  	let resultado = window.document.getElementById("equacao1");
+        resultado.innerHTML = `<h2> <strong> Resultado: ${equacao} </strong> </h2>`;
+	  }
+	</script>
+
+	<hr>
+
+
+	<h2> Equação: 30 ÷ [10 + (2 + 3)] = </h2>
+	 <button onclick="calc2()">Calcular equação</button>
+	 <section id="equacao2">
+	 <h2> Resultado: </h2>
+	 </section>
+     <script type="text/javascript">
+	  function calc2(){
+	  	let equacao = 30 / [10 + (2 + 3)];
+	  	let resultado = window.document.getElementById("equacao2");
+        resultado.innerHTML = `<h2> <strong> Resultado: ${equacao} </strong> </h2>`;;
+	  }
+	</script>
+
+	<hr>
+
+	<h2> Equação: [(18 + 3 · 2) ÷ 8 + 5 · 3] ÷ 6 = </h2>
+	 <button onclick="calc3()">Calcular equação</button>
+	 <section id="equacao3">
+	 <h2> Resultado: </h2>
+	 </section>
+     <script type="text/javascript">
+	  function calc3(){
+	  	let equacao = ((18 + 3 * 2) / 8 + 5 * 3) / 6;
+	  	let resultado = window.document.getElementById("equacao3");
+        resultado.innerHTML = `<h2> <strong> Resultado: ${equacao} </strong> </h2>`;;
+	  }
+	</script>
+
+	<hr>
+
+	<h2> Equação: [(64 - 16·4) + (48·10 - 180)]·5 = </h2>
+	 <button onclick="calc4()">Calcular equação</button>
+	 <section id="equacao4">
+	 <h2> Resultado: </h2>
+	 </section>
+     <script type="text/javascript">
+	  function calc4(){
+	  	let equacao = ((64 - 16*4) + (48*10 - 180))*5;
+	  	let resultado = window.document.getElementById("equacao4");
+        resultado.innerHTML = `<h2> <strong> Resultado: ${equacao} </strong> </h2>`;;
+	  }
+	</script>
+
+		<hr>
+
+
+	<h2> Equação: {[(8 · 4 + 3) ÷ 7 + (3 + 15 ÷ 5) · 3] · 2 - (19 - 7) ÷ 6} · 2 + 12 = </h2>
+	 <button onclick="calc5()">Calcular equação</button>
+	 <section id="equacao5">
+	 <h2> Resultado: </h2>
+	 </section>
+     <script type="text/javascript">
+	  function calc5(){
+	  	let equacao = (((8 * 4 + 3) / 7 + (3 + 15 / 5) * 3) * 2 - (19 - 7) / 6) * 2 + 12;
+	  	let resultado = window.document.getElementById("equacao5");
+        resultado.innerHTML = `<h2> <strong> Resultado: ${equacao} </strong> </h2>`;;
+	  }
+	</script>
+
+		<hr>
+
+	</body>
+</html>

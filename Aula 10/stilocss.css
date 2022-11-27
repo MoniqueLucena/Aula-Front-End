@@ -1,0 +1,44 @@
+img{
+    vertical-align: middle;
+    max-width: 80px;
+}
+
+.row{
+    text-align: center;
+}
+
+table{
+    background-color: white;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 50px;
+}
+
+.bg-green{ 
+    background-color: PaleGreen;
+
+
+}
+tr:nth-child(even) {
+  background:#D5EADC;
+}
+.bg-white {
+    background-color: white;
+}
+
+.text-ac{
+    text-align: justify;
+    background-color: grey;
+    color: white;
+}
+
+.padding3 td, th { 
+    padding: 12px;
+}
+   
+
+
+ }   
+#filme {
+   color: grey;
+}

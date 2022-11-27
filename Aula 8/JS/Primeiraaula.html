@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+	<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Primeiros programas JavaScript</title>
+
+		<script type="text/javascript" src="PrimeiroScript.js">
+		</script>
+		
+ 		<script type="text/javascript">
+ 			 function mudarParagrafo()
+ 			 {
+ 			 	document.getElementById("p1").innerHTML ="Este parágrafo foi modificado"
+ 			 }
+
+
+ 		</script>
+
+	</head>
+	<body>
+
+		<p id="p1"> Isto é um parágrafo</p>
+		<button type="button" onclick="mudarParagrafo()">Clique Aqui</button>
+
+		<p id="p2"> </p>
+		<script type="text/javascript">
+			document.getElementById("p2").innerHTML= 5+6;
+		</script>
+
+		<p> Testando document.write() sozinho</p>
+		<script type="text/javascript">
+			document.write(5+6);
+		</script>
+
+
+		<p> Testando document.write() dentro de um botão</p>
+		
+		<button type="button" onclick="document.write(5+6)"
+		>Clique Aqui</button>
+
+
+		<p> testando window.alert()</p>
+		<script type="text/javascript">
+			window.alert(5+6);
+		</script>
+
+
+		<p> testando console.log</p>
+		<script type="text/javascript">
+			console.log(5+6);
+		</script>
+
+		<script type="text/javascript">
+			document.write(1+2);
+			document.write(3+4);
+			document.write(5+6);
+  		</script>
+
+  		<p> testando SEM espaço em branco</p>
+  		<script type="text/javascript">
+  			document.write("sem espaço");
+  		</script>
+
+  		<p> testando COM espaço em branco</p>
+  		<script type="text/javascript">
+  			document.write( "Com espaço" );
+  		</script>
+
+  		<p>valores literais</p>
+  		<script type="text/javascript"> 
+  			document.write(100);
+  			document.write(10.1);
+  			document.write("Eu sou literal")
+  			document.write("Eu também sou literal");
+  		</script>
+
+		<p> Valores variaveis </p>
+  		<script type="text/javascript">
+  			let n1 = 1;
+  			let n2;
+
+  			n2= 21;
+
+  			(1+21) * 3;
+
+  			(n1+n2) *3;
+
+  		</script>
+
+
+  		<p>comentários</p>
+  		<script type="text/javascript">
+  			//comentário de uma linha
+  			/* comentário com múltiplas linhas
+
+  			
+  			let n1 = 1;
+  			let n2;
+  			n2= 21;
+  			(1+21) * 3;
+
+  			(n1+n2) *3; */
+
+</script>
+
+<p> Nomes e Identificadores</p>
+
+<script type="text/javascript">
+	//precisam iniciar com letras do alfabeto (a-z)
+	//não pode iniciar com números
+	//pode iniciar com cifrão $
+	//pode utilizar underline no início
+	//não pode hífen ou operadores aritmeticos
+	//não pode pontuação e acentuação
+	//não pode ter espaçamento
+
+
+	let nome = "Monique";
+	let primeiro_nome= "Monique";
+	let primeiroNome= "Monique";
+
+
+	let primeironome = "Bento";
+
+	let PrimeiroNome = "Carol"; //Upper Camel Case
+
+	Let primeiroNome2= "Davi"; //Lower Camel Case
+</script>
+
+
+	</body>
+	</html>

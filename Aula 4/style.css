@@ -1,0 +1,124 @@
+body{
+
+    /* background */
+    background-color: #F2E7DC;
+
+    /* texto */
+    color: #0D0D0D;
+    font-family: Georgia, monospace;
+    text-align: justify;
+
+    /* alinhamento e tamanho */
+    width: 85%;
+    margin: auto;
+}
+
+section {
+    padding-left: 256px;
+    padding-right: 256px;
+    padding-bottom: 64px;
+    padding-top: 64px;
+}
+
+#topo{
+    background-color: #038C7F;
+    color: #F2E7DC;
+    padding: 20px;
+    margin-bottom: 0px;
+}
+
+h1 {
+    text-align: center;
+}
+
+h4{
+    text-align: center;
+    color: #A9D9D0;
+}
+#sumario{
+    background-color: #038C7F;
+    color: #F2E7DC;
+    padding: 20px;
+    margin-bottom: 50px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 200px;
+}
+
+
+
+
+/*Tabela*/
+
+table {
+    width: 100%;
+}
+td{
+    background-color: #A9D9D0;
+}
+th {
+    background-color: #038C7F;
+    color: #F2E7DC;
+}
+td, th{
+    /*borda*/
+    border-width: 3px;
+    border-style: double; /*solido*/
+    border-radius: 10px;
+    border-color: #F2E7DC;
+
+    text-align: center;
+    padding: 8px;
+}
+
+p {
+    text-align: justify;
+    text-indent: 50px; /*identação da primeira linha*/
+}
+
+a {
+    color:#15F032;
+}
+
+a:link {
+    color: #ACDB8A;
+}
+
+a:visited{
+    color: black;
+}
+
+a:hover{
+    color: #025454;
+}
+
+a:active {
+    color: #1EF0A7;
+}
+
+
+img {
+    width: 40%;
+    display: block;
+    margin: auto;
+    border-radius: 20px;
+}
+
+.titulo{
+    background-color: #A9D9D0;
+    color: #027373;
+    text-align: center;
+}
+
+#l1, #l3, #l5{
+    background-color: #93F28D;
+    border-radius: 50px;
+}
+
+span {
+    color: #027373;
+}
+
+ol {
+    text-align: center;
+    list-style-position: inside;
+}
